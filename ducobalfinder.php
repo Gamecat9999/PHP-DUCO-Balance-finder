@@ -8,7 +8,7 @@
 <body>
     <h2>Account Balance</h2>
     <p id="faucet balance">
-        <?php
+        <?php //RIGHT HERE ------------------------------> input the username that you want. katfaucet is the example.
             $url = 'https://server.duinocoin.com/balances/katfaucet';
             $json = @file_get_contents($url);
             if ($json === FALSE) {
